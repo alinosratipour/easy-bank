@@ -7,14 +7,18 @@
 
 /*Header Logo, Hamburger menu*/
 .header{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 6;
+    background-color: #fff;
 }
 
 .logo {
     max-width: 200px;
     height: 40px;
+    padding-left: 20px;
 }
 /*HamBurger Menu*/
 .hamburger_menu {
@@ -54,8 +58,44 @@
 
 /*Mobile Background image*/
 .bg_mobile{
-    background-image: url("/images/bg-intro-mobile.svg");
+   position: relative;
+    width: 100%;
+    height: 500px;
+    background-image:url("/images/bg-intro-mobile.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+   
+}
+
+.mobile_img img{
+    margin-top: -110px;
+    width: 100%;
+    height: auto;
+    }
+
+.intro_text h1{
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 10px;
+    color: rgb(104, 100, 100);
+  padding-top: 70px;
+}
+
+.intro_text p{
+    font-size: 1.2rem;
+    color: rgb(98, 94, 94);
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 70px;
+}
+.intro_text{
+    text-align: center;
+}
+.invite_btn{
+    padding: 30px;
+    text-decoration: none;
+    background-color:  hsl(136, 65%, 51%);
+    border-radius: 25px;
+    width: 60%;
 }
