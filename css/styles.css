@@ -259,7 +259,7 @@ filter: invert(5%) sepia(50%) saturate(2476%) hue-rotate(90deg) brightness(118%)
 .bg_mobile{
 display: flex;
 background-image: url("/images/bg-intro-desktop.svg");
-background-position: top 70% right -50%;
+background-position: top 110% right -50%;
 background-size: 70%; 
 }
 
@@ -274,9 +274,13 @@ background-size: 70%;
     font-size: 1.2rem;
     text-align: center;
     flex-basis: 18%;
-    
+   
 }
 
+.invite_btn{
+
+    text-align: center;
+}
 
 .logo{
     flex: 1;
@@ -321,18 +325,78 @@ background-size: 70%;
     width: 80%;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align:left;
+    
 }
 
-.h1{ padding-top: 40px;}
+.h1{ text-align: left;  padding-left: 40px;}
 .invite_btn{ width: 40%; margin-left: 20px; margin-top: 0px;}
-.text{padding: 40px; padding-bottom: 30px; }
+.text{ padding-left: 40px; padding-bottom: 20px;}
 .why_text{padding-top: 170px; text-align: left; padding: 80px;}
 .choose_text_content{width:50% ; }
 
 .service{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+}
+.why_text_content{
+    font-size: 0.8rem;
+    text-align: left;
+    width: 100%;
+    padding-left: 0px ;
+    padding-right: 0px;  
+}
+
+.icone_title{
+    font-size: 1rem;
+}
+
+.latest_articles{
+    flex-direction: row;
+    padding: 20px;
+   
+    
+}
+
+.latest_article{
+padding-left: 40px;
+}
+.articles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    display: flex;
+}
+
+.footer_nav{
+    background-color: khaki;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.footer_logo{
+    background-color: lightcoral;
+}
+.social_media_icons img{
+    padding-left: 20px;
+    width: 15%;
+}
+
+.test{
+    display: flex;
+    flex-direction: column;
+}
+.test2{
+    flex: 2;
+    text-align: right;
+    background-color: mediumvioletred;
 }
 
 }
