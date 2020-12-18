@@ -1,26 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    Font-size:1rem;
+    background-color: #fafafa;
+    font-family: 'Public Sans', sans-serif;
+}
 main{
     position: relative;
 }
 /*Header Logo, Hamburger menu*/
 .header{
+    width: 100%;
     position: relative;
     display: flex;
+    display: -webkit-flex;
     justify-content: space-between;
     align-items: center;
     z-index: 6;
-    background-color: #fff;
+    background-color: rgb(252, 249, 249);
 }
 
 .logo {
     max-width: 200px;
     height: 40px;
     padding-left: 20px;
+   background-color: mediumspringgreen;
 }
 /*HamBurger Menu*/
 .hamburger_menu {
@@ -30,8 +40,10 @@ main{
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
     transition: all 0.5s ease-in-out;
+   background-color: mediumvioletred;
+  
 }
 .line {
     width: 50px;
@@ -77,24 +89,26 @@ main{
     }
 
 .intro_text h1{
-    font-size: 2rem;
-    text-align: center;
-    padding-bottom: 10px;
+    font-size: 1.5rem;
+
+   padding: 30px;
     color: rgb(104, 100, 100);
-  padding-top: 70px;
+  
+}
+.text{
+    padding: 30px;
+   color: rgb(98, 94, 94);
+   padding-bottom: 70px;
+   text-align: left;  
 }
 
-.intro_text p{
-    font-size: 1.2rem;
-    color: rgb(98, 94, 94);
-    text-align: center;
-    padding: 30px;
-    padding-bottom: 70px;
-}
 .intro_text{
+   
     text-align: center;
     padding-bottom: 50px;
 }
+
+
 .invite_btn{
     padding: 20px;
     text-decoration: none;
@@ -107,15 +121,20 @@ main{
 }
 
 /*why Easy bank section*/
-.why_ebank{
+.why_text{
     text-align:center;
     padding: 30px;
+    background-color: #f4f5f7;
 }
 
-.reason_choose_ebank{
+.reason_choose_text{
+    padding: 30px;
+
+}
+
+.why_text_content{
     padding: 30px;
 }
-
 
 /*Services Section style*/
 .service{
@@ -125,7 +144,7 @@ main{
   align-items: center;
   justify-content: center;
   padding-bottom: 80px;
-  
+   background-color: #f4f5f7;
 }
 
 .service .icone{
@@ -139,16 +158,94 @@ main{
 
 
 /*Articles Section*/
-
+.article_title{
+    text-align: left;
+    padding-bottom: 20px;
+}
 .latest_articles{
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding-bottom: 80px; 
+}
+.author{
+    display:inline-block;
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    color: lightgrey;
+}
+
+.article_text{
+    text-align: left;
 }
 
 .latest_articles .articles{
     padding: 30px;
+    padding-bottom: 40px;
 }
 .latest_articles img{
       width: 100%;
 }
+
+
+/*Footer Styles*/
+
+.footer{
+    text-align: center;
+    background-color: rgb(20, 19, 19);
+}
+.footer_logo{
+    padding: 40px;
+}
+.footer_logo img{
+    color: lightgrey;
+}
+
+.footer_nav li{
+    list-style: none;
+    padding: 20px;
+}
+.footer_nav{
+    padding: 40px;
+}
+.footer_links{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer_btn{
+    padding: 20px;
+    text-decoration: none;
+    background-color:  hsl(136, 65%, 51%);
+    border-radius: 25px;
+    width: 70%;
+    color: cornsilk;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.copy_right{
+    color: cornsilk;
+    padding: 40px;
+}
+
+.social_media_icons{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_media_icons img{
+    padding-left: 20px;
+    width: 15%;
+}
+
+.filter_svg{
+filter: invert(5%) sepia(50%) saturate(2476%) hue-rotate(90deg) brightness(118%) contrast(30%);
+}
+
+
+
+/**/
