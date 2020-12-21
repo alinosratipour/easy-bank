@@ -13,6 +13,9 @@ body{
 }
 main{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    
 }
 /*Header Logo, Hamburger menu*/
 .header{
@@ -71,12 +74,19 @@ main{
 .bg_mobile{
    position: relative;
     width: 100%;
-    height: 500px;
+   
     background-image:url("/images/bg-intro-mobile.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
    
+   
+}
+
+.next_gen_h1{
+    text-align: center;
+    
+    
 }
 
 .mobile_img img{
@@ -85,11 +95,13 @@ main{
     height: auto;
     }
 
-.intro_text h1{
-    font-size: 1.5rem;
-
+.h1{
+    font-size: 2rem;
    padding: 30px;
     color: rgb(104, 100, 100);
+    text-align: left;
+    width: 70%;
+   
   
 }
 .text{
@@ -97,6 +109,7 @@ main{
    color: rgb(98, 94, 94);
    padding-bottom: 70px;
    text-align: left;  
+   
 }
 
 .intro_text{
@@ -109,7 +122,7 @@ main{
 .invite_btn{
     padding: 20px;
     text-decoration: none;
-    background-color:  hsl(136, 65%, 51%);
+     background-image: linear-gradient(to right,#31d06c , #2cb9ca); 
     border-radius: 25px;
     width: 70%;
     color: cornsilk;
@@ -213,7 +226,7 @@ main{
 .footer_btn{
     padding: 20px;
     text-decoration: none;
-    background-color:  hsl(136, 65%, 51%);
+      background-image: linear-gradient(to right,#31d06c , #2cb9ca); 
     border-radius: 25px;
     width: 70%;
     color: cornsilk;
@@ -267,7 +280,7 @@ background-size: 70%;
     display: block;
     padding: 15px;
     text-decoration: none;
-    background-color:  hsl(136, 65%, 51%);
+   background-image: linear-gradient(to right,#31d06c , #2cb9ca); 
     border-radius: 25px;
     color: cornsilk;
     font-weight: 400;
@@ -321,7 +334,7 @@ background-size: 70%;
 }
 
 .next_gen_h1{
-   padding-top: 70px;
+   padding-top: 170px;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -329,9 +342,9 @@ background-size: 70%;
     
 }
 
-.h1{ text-align: left;  padding-left: 40px;}
-.invite_btn{ width: 40%; margin-left: 20px; margin-top: 0px;}
-.text{ padding-left: 40px; padding-bottom: 20px;}
+.h1{ text-align: left;  padding-left: 40px; font-size: 2.5rem; padding-bottom: 20px;}
+.invite_btn{ width: 40%; margin-left: 20px; margin-top: 0px; }
+.text{ width: 90%;  padding: 10px; text-align: center; padding-bottom: 40px;}
 .why_text{padding-top: 170px; text-align: left; padding: 80px;}
 .choose_text_content{width:50% ; }
 
@@ -373,30 +386,47 @@ padding-left: 40px;
 }
 
 .footer{
+    background-color: #2d314e;
     display: flex;
 }
 
 .footer_nav{
-    background-color: khaki;
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
 .footer_logo{
-    background-color: lightcoral;
-}
-.social_media_icons img{
-    padding-left: 20px;
-    width: 15%;
+ filter: invert(5%) sepia(50%) saturate(2476%) hue-rotate(90deg) brightness(118%) contrast(30%);
 }
 
-.test{
+.social_media_icons img{
+    padding-left: 20px;
+    width: 50%;
+}
+
+.footer_btn{
+  background-image: linear-gradient(to right,#31d06c , #2cb9ca); 
+}
+.btn_container{
+    background-color: darkmagenta;
+}
+
+.logo_icon_container{
+    
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+
 }
-.test2{
+.invite_btn_copyright{
     flex: 2;
     text-align: right;
-    background-color: mediumvioletred;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
+
+
 
 }
